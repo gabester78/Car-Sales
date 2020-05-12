@@ -17,6 +17,11 @@ export const initialState = {
 
 export const appReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "ADD_FEATURE":
+      return {
+        ...state,
+        features: [...state.features, action.payload],
+      };
     default:
       return state;
   }
