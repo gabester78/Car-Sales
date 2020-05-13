@@ -9,8 +9,7 @@ import { appReducer } from "./reducer/reducer";
 import { createStore } from "redux";
 
 const store = createStore(appReducer);
-console.log(store.getState(), "<store");
-
+// console.log(store.getState(), "<<<store");
 const App = () => {
   return (
     <div className="boxes">
